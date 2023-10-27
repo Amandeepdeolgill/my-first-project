@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="stylesheet" href="Spotify.css">
+</head>
+<body>
+
+  <div class="sidebar">
+     <div class="topoptions">
+      <div class="option1">
+        <i class="fa-solid fa-house"></i>
+        <span class="home">Home</span>
+      </div>
+      <div class="option2">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span class="search">Search</span>
+      </div>
+    </div>
+    <div class="libmain">
+      <div class="liboptions">
+        <div class="lib">
+          <img src="./assets/library_icon.png" href="icon">
+          <div class="libinfo">Your Library</div>
+        </div>
+        <div class="libicon">
+          <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-arrow-right i2"></i>
+        </div>
+      </div>
+       <div class="middletop">
+         <button>Playlists</button>
+         <button>Artists</button>
+       </div>
+       <div class="middle">
+         <button><i class="fa-solid fa-magnifying-glass"></i></button>
+         <button>Recents<i class="fa-solid fa-sort-down icon"></i></button>
+       </div>
+    </div>
+</div>
+
+   <div class="mainbody">
+    <div class="navbar">
+      <div class="fronticons">
+      <i class="fa-solid fa-chevron-left leftarrow"></i>
+      <i class="fa-solid fa-chevron-right rytarrow"></i>
+      </div>
+      <div class="backicons">
+        <button class="badge fade">Explore Premium</button>
+        <button class="badge darkbadge"><i class="fa-regular fa-circle-down"></i>Install App</button>
+        <button class="bel"><i class="fa-regular fa-bell bell"></i></button>
+        <button class=" bel rytbel"><i class="fa-regular fa-user bell"></i></button>
+      </div>
+    </div> 
+
+    <div class="container">
+       <h2>Recently played</h2>
+       <div class="cards">
+        <div class="card">
+           <img src="./assets/smallwall1.jpg">
+           <h3 class="heading">Lemonade</h3>
+           <p class="info">Diljit Dosanjh</p>
+          </div>
+       <div class="card">
+        <img src="./assets/wall4.jpg">
+        <h3 class="heading">Bollywood Songs</h3>
+        <p class="info">Listen to these bollywood love songs..</p>
+       </div>
+      </div>
+
+       <h2 class="moving">Playlists</h2>
+       <div class="cards">
+       <div class="card">
+        <img src="./assets/wall5.jpg">
+        <h3 class="heading">O jaana</h3>
+        <p class="info">Lyrics my monu music India..</p>
+       </div>
+       <div class="card">
+        <img src="./assets/wall6.jpg">
+        <h3 class="heading">various Artists</h3>
+        <p class="info">Top 10 Most liked Hindi songs</p>
+       </div>
+       <div class="card">
+        <img src="./assets/wall7.jpg">
+        <h3 class="heading">Bajrangi Bhaijan</h3>
+        <p class="info">Rahat Fateh Ali Khan</p>
+       </div>
+       <div class="card">
+        <img src="./assets/wall3.jpg">
+        <h3 class="heading">Mast Magan </h3>
+        <p class="info">Arijit Singh</p>
+       </div>
+       <div class="card">
+        <img src="./assets/card3img.jpeg">
+        <h3 class="heading">Mere paas tum ho.</h3>
+        <p class="info">Rahat Fateh Ali Khan</p>
+       </div>
+       <div class="card">
+        <img src="./assets//wall8.jpg">
+        <h3 class="heading">Energetic Songs</h3>
+        <p class="info">Listen to these punjabi songs...</p>
+       </div>
+      </div>
+
+       <h2 class="moving">Top Hit songs</h2>
+       <div class="cards">
+       <div class="card">
+        <img src="./assets/card5img.jpeg">
+        <h3 class="heading">Top 50 Global</h3>
+        <p class="info">Your daily update of the most played tracks right now - Global..</p>
+       </div>
+       <div class="card">
+        <img src="./assets/card6img.jpeg">
+        <h3 class="heading">Top 50 India</h3>
+        <p class="info">Your daily update of the most played tracks right now - India...</p>
+       </div>
+      </div>
+    </div>
+  </div> 
+
+
+
+   <div class="playing">
+    <div class="album">
+     <img src="./assets/smallwall1.jpg" class="swall">
+     <span>
+       <h5>Lemonade</h5>
+       <p>Diljit Dosanjh</p>
+     </span>
+     <i class="fa-regular fa-heart"></i>
+    </div>
+    <div class="musicplayer">
+      <div class="playercontrol">
+        <img src="./assets/player_icon1.png">
+        <img src="./assets/player_icon2.png">
+        <img src="./assets/play_musicbar.png" class="image">
+        <img src="./assets/player_icon4.png">
+        <img src="./assets/player_icon5.png">
+      </div>
+      <div class="barprogress">
+        <span class="curtm">0.00s</span>
+        <input type="range" class="bar"> 
+        <span class="maxtm">3.33s</span>
+       </div>
+      </div>
+
+
+    <span class="controls">
+      <i class="fa-regular fa-square-caret-right"></i>
+      <i class="fa-solid fa-music"></i>
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-mobile-retro"></i>
+      <span><i class="fa-solid fa-volume-low"></i></span>
+      <input type="range" class="rng">
+      <span><i class="fa-solid fa-display"></i></span>
+    </span>
+  </div> 
+  <script src="app.js"></script>
+</body>
+</html>

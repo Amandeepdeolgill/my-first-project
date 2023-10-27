@@ -1,0 +1,350 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: aquamarine;
+    display: flex;
+    overflow: hidden;
+    background-color: black;
+}
+.sidebar {
+    height: 100vh;
+    width: 26rem;
+    overflow: hidden;
+}
+.mainbody {
+    height: 100vh;
+    flex:1;
+    overflow: auto;
+    background-color: #181818;
+}
+.playing {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+}
+.topoptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 1rem;
+    height: 6.5rem;
+    background-color: #181818;
+    color: #fff;
+    border-radius: 0.5rem;   
+}
+.topoptions:hover {
+    cursor: pointer;
+}
+.topoptions i {
+    padding-right: 0.5rem;
+}
+.topoptions .option2 {
+    opacity: 0.7;
+}
+.topoptions .option2:hover {
+    opacity: 1;
+} 
+.option1 .home {
+    font-weight: 600;
+}
+.option2 .search {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color:white;
+} 
+.libmain {
+    height: 3.5rem;
+    background-color: #181818;
+    color: #fff;
+}
+.libmain .liboptions {
+    padding-top: 1.25rem;  
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+}
+.lib img {
+    height: 1.15rem;
+    width:1.15rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    opacity: 0.7;
+    cursor: pointer; 
+}
+.lib img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.lib {
+    display: flex;
+    opacity: 0.7;
+}
+.libinfo {
+    opacity: 0.7;
+}
+.libinfo:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.libicon {
+    padding-left: 5rem;
+    font-weight: 300;
+}
+.libicon i {
+    padding-right: 1rem;
+    opacity: 0.7; 
+}
+.libicon i:hover {
+    opacity: 1;
+    cursor:pointer;
+}
+.middletop {
+    display: flex;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #181818;
+}
+.middletop button {
+    background-color: #232323;
+    color:#fff;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    border-radius: 2rem;
+    margin-left: 0.5rem;
+    opacity: 0.7;
+    margin-top: 0.9rem;
+}
+.middletop button:hover {
+    opacity: 1;
+}
+.middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #181818;
+}
+.middle button {
+    background-color: #232323;
+    color: white;
+    border: none;
+    opacity: 0.7;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.middle button:hover {
+    opacity: 1;
+}
+.middle button .icon {
+    padding-left: 0.5rem;
+}
+
+.mainbody {
+    margin-left: 0.5rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #181818;
+    height: 4rem;
+    align-items: center;
+    color: #fff;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    position: sticky;
+    top:0;
+    z-index: 7;
+}
+.navbar .fronticons {
+    font-size: large;
+}
+.fronticons .leftarrow {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.fronticons .leftarrow:hover {
+    cursor: pointer;
+}
+.fronticons .rytarrow {
+    opacity:0.7;
+}
+.fronticons .rytarrow:hover {
+    cursor: not-allowed;
+}
+.backicons .badge {
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    border-radius: 2rem;
+
+}
+.backicons .badge:hover {
+    cursor: pointer;
+}
+ @media (max-width:992px){
+    .backicons .fade {
+        display: none;
+    }
+    .fronticons .rytarrow {
+        display: none;
+    }
+}
+.backicons .darkbadge {
+    color: white;
+    background-color: black;
+}
+.backicons .darkbadge i {
+    padding-right: 0.4rem;
+}
+
+.backicons .bell {
+    opacity: 0.7;
+}
+.backicons .bel {
+    background-color: #000;
+    color: white; 
+    border-radius: 50%;
+    width: 1.95rem;
+    height: 2rem;
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+    border-color: none;
+    padding-left: 0.5rem;
+}
+.backicons .rytbel {
+    margin-right: 1rem;
+}
+.backicons .bell:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.container {
+    padding-left: 1rem;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #181818;
+    width: 9.25rem;
+    border-radius: 0.5rem;
+    line-height: 0.85rem;
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1.8rem;
+    opacity:0.9;
+}
+.card:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: #232323;
+}
+.card p {
+    font-size: small;
+    opacity: 0.75;
+}
+.card img {
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.container h2 {
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+.container .moving:hover {
+    cursor: pointer;
+}
+.playing {
+    display: flex;
+}
+.album {
+    width: 25%;
+}
+.musicplayer {
+    width: 50%;
+    text-align: center;
+    
+}
+.controls {
+    width: 25%;
+}
+.playercontrol img{
+    height: 1rem;
+    width: 1rem;
+    padding-right: 1.2rem;
+    opacity: 0.7;
+    padding-top: 0.9rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+}
+.playercontrol img:hover {
+    opacity:1;
+}
+.playercontrol .image {
+    height: 1.3rem;
+    width: 1.3rem;
+    opacity: 1;
+}
+.barprogress .bar {
+    width: 19rem;
+    height: 2px;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+}
+.barprogress .bar:hover {
+    opacity: 1;
+}
+.album .swall {
+    height: 3.3rem;
+    width: 3.3rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+}
+.album {
+    display: flex;
+    color: white;
+}
+.album p {
+    font-size: x-small;
+    opacity: 0.7;
+}
+.album span {
+    padding-top: 0.5rem;
+    line-height: 0.1rem;
+    opacity: 0.7;
+}
+.album span:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.album i {
+    padding-top: 1.9rem;
+    padding-left: 1rem;
+    opacity: 0.7;
+}
+.album i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.controls {
+    padding-top: 1.5rem;
+    color:#fff;
+  
+}
+.controls i:hover {
+    opacity:1;
+    cursor: pointer;
+}
+.controls i {
+    padding-right: 0.7rem;
+    opacity: 0.7;
+}
+.controls .rng {
+    height: 0.2rem;
+    width: 4.5rem;
+    margin-top: 0.2rem;
+    opacity:0.7;
+}
+.controls .rng:hover {
+    opacity: 1;
+} 
